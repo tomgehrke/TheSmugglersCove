@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="primary_view_padding">16dp</dimen>
+    <dimen name="item_photo_size">80dp</dimen>
+    <dimen name="item_photo_margin_end">16dp</dimen>
+    <dimen name="item_name_text_size">22sp</dimen>
+    <dimen name="item_name_subtext_size">14sp</dimen>
+    <dimen name="item_name_category_width">0dp</dimen>
+    <dimen name="item_name_category_padding_top">8dp</dimen>
+    <dimen name="edit_photo_size">200dp</dimen>
+    <dimen name="edit_quantity_button_size">36dp</dimen>
+</resources>

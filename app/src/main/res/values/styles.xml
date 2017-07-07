@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="InventoryItemStyle">
+        <item name="android:background">@color/listItemBackground</item>
+        <item name="android:padding">@dimen/primary_view_padding</item>
+    </style>
+
+    <style name="InventoryItemPhotoStyle">
+        <item name="android:layout_width">@dimen/item_photo_size</item>
+        <item name="android:layout_height">@dimen/item_photo_size</item>
+        <item name="android:layout_marginEnd">@dimen/item_photo_margin_end</item>
+        <item name="android:layout_marginRight">@dimen/item_photo_margin_end</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="InventoryItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="InventoryItemName" parent="InventoryItemText">
+        <item name="android:textSize">@dimen/item_name_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/listItemNameColor</item>
+    </style>
+
+    <style name="InventoryItemSubText" parent="InventoryItemText">
+        <item name="android:textSize">@dimen/item_name_subtext_size</item>
+        <item name="android:textColor">@color/listItemSubTextColor</item>
+    </style>
+
+    <style name="InventoryItemSellButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/listItemButtonTextColor</item>
+    </style>
+
+    <style name="EmptyViewStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_emptytreasurechest</item>
+    </style>
+
+    <style name="EmptyViewTitleStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">#282828</item>
+    </style>
+
+    <style name="EmptyViewSubTitleStyle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">#414141</item>
+    </style>
+
+    <style name="FABStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:src">@drawable/ic_add_white_48dp</item>
+    </style>
+
+    <style name="CategoryStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CategoryLegendStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/item_name_category_width</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/item_name_category_padding_top</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="InputColumnStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="EditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="QuantityButtonStyle">
+        <item name="android:layout_width">@dimen/edit_quantity_button_size</item>
+        <item name="android:layout_height">@dimen/edit_quantity_button_size</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/colorAccent</item>
+    </style>
+
+    <style name="QuantityIncreaseStyle" parent="QuantityButtonStyle">
+        <item name="android:src">@drawable/ic_add_circle_black_48dp</item>
+    </style>
+
+    <style name="QuantityDecreaseStyle" parent="QuantityButtonStyle">
+        <item name="android:src">@drawable/ic_remove_circle_black_48dp</item>
+    </style>
+
+    <style name="EditItemPhotoStyle">
+        <item name="android:layout_width">@dimen/edit_photo_size</item>
+        <item name="android:layout_height">@dimen/edit_photo_size</item>
+        <item name="android:background">@drawable/ic_add_a_photo</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+</resources>
